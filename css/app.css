@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #649eff;
+    --accent-color: ##5276EE;
+    --secondary-color: #000000;
+    --tertiary-color: #000000;
+    --quaternary-color: #000000;
+    --white-color: #ffffff;
+    --text-color-primary: #535353;
+    --text-color-secondary: #CFCFCF;
+    --text-color-tertiary: #000000;
+    --text-color-quaternary: #000000;
+    --text-color-white: #ffffff;
+    --text-color-black: #000000;
+}
+
+
+/* Fade animations for both directions */
+.card-fade-enter-active,
+.card-fade-leave-active {
+    transition: opacity 0.2s ease;
+}
+
+.card-fade-enter-from,
+.card-fade-leave-to {
+    opacity: 0;
+}

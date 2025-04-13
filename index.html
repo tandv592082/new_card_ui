@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.6.5/dist/vue-router.js"></script>
+    <link rel="stylesheet" href="/css/vue_app_common_style.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vuex/3.6.2/vuex.min.js"
+        integrity="sha512-Tkxwo8dZEZTmje5QT9uodCqe2XGbZdBXU8uC4nskBt0kwR99Anzkz8JCSMByfoqjLTHcTuIB8fsmED3b9Ljp3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/vue_app_common_module.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/pages.js"></script>
+    <script src="/js/store.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="/js/tailwind-class-extractor.js"></script>
+</head>
+
+<body>
+    <div id="app" class="overflow-y-auto pb-4">
+        <router-view></router-view>
+    </div>
+</body>
+
+<script>
+    const app = defineApp({
+        el: '#app',
+        router,
+        store,
+    })
+</script>
+</html>
