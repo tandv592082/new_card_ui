@@ -135,6 +135,8 @@ definePage('PromotionDetailPage', {
                         <li v-for="(info, index) in promotionInfo" :key="index">{{ info }}</li>
                     </ul>
                 </div>
+
+                
             </div>
         </div>
     `

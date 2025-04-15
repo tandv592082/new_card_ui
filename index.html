@@ -23,10 +23,10 @@
 </head>
 
 <body>
-    <div id="app" class="overflow-y-auto pb-4">
-        <transition name="slide-up" :duration="{leave: 0}">
-            <router-view></router-view>
-        </transition>
+    <div id="app" class="overflow-x-hidden overflow-y-auto">
+            <transition name="slide-up" :duration="{leave: 0}">
+                <router-view></router-view>
+            </transition>
     </div>
 </body>
 

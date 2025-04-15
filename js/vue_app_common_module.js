@@ -1,6 +1,17 @@
 const { mapGetters, mapActions, mapMutations} = Vuex;
 
 /**
+ * Set page background color
+ * @param {*} color 
+ */
+const setPageBackgroundColor = (color) => {
+    const app = window['__V_APPLICATION'];
+    if (app) {
+        app.$el.style.backgroundColor = color;
+    }
+}
+
+/**
          * Generate page name
          * @param name
          * @returns {string}
@@ -29,6 +40,13 @@ const defineRouter = (options = {}) => {
     return new VueRouter(options)
 };
 
+/**
+ * Set page title
+ * @param {*} title - the title of the page
+ */
+const setPageTitle = (title) => {
+    document.title = title || "";
+}
 
 /**
  * Define vue application
@@ -208,4 +226,5 @@ defineComponent('skeleton-loader', {
             return style;
         },
     },
-})
+});
+

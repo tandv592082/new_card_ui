@@ -4,8 +4,9 @@ const routes = [
         component: getPage('HomePage'),
         name: 'HomePage',
         meta: {
+            background: '#ffffff',
             topbar: {
-                title: 'Home',
+                title: 'My card',
             },
         }
     },
@@ -14,6 +15,7 @@ const routes = [
         component: getPage('PromotionPage'),
         name: 'PromotionPage',
         meta: {
+            background: '#ffffff',
             topbar: {
                 title: 'Promotion',
             },
@@ -24,6 +26,7 @@ const routes = [
         component: getPage('PromotionDetailPage'),
         name: 'PromotionDetailPage',
         meta: {
+            background: '#ffffff',
             topbar: {
                 title: 'Promotion Detail',
             },
@@ -38,6 +41,8 @@ const router = defineRouter({
 });
 
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _, next) => {
+    setPageTitle(to.meta.topbar.title);
+    setPageBackgroundColor(to.meta.background);
     next();
 });
