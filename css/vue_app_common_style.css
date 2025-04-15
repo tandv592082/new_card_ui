@@ -107,7 +107,7 @@ input {
 body, html {
     height: 100vh;
     width: 100vw;
-    background-color: #649eff;
+    background-color: white;
     overflow: hidden;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 }

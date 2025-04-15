@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Management</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router@3.6.5/dist/vue-router.js"></script>
@@ -25,7 +24,9 @@
 
 <body>
     <div id="app" class="overflow-y-auto pb-4">
-        <router-view></router-view>
+        <transition name="slide-up" :duration="{leave: 0}">
+            <router-view></router-view>
+        </transition>
     </div>
 </body>
 

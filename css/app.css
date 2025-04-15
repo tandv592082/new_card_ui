@@ -15,12 +15,19 @@
 
 
 /* Fade animations for both directions */
-.card-fade-enter-active,
-.card-fade-leave-active {
-    transition: opacity 0.2s ease;
+.slide-up-enter-active,
+.slide-up-leave-active {
+    transition: all 0.3s ease;
+}
+.slide-up-enter-from {
+    transform: translateY(15px);
+    opacity: 0;
+}
+.slide-up-leave-to {
+    transform: translateY(-15x);
+    opacity: 0;  
 }
 
-.card-fade-enter-from,
-.card-fade-leave-to {
-    opacity: 0;
+.shadow-custom {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
